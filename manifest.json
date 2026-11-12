@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Sort YouTube Tabs by Duration",
+  "version": "1.0",
+  "description": "Click the toolbar button to move all YouTube watch tabs to the front, sorted ascending by video duration. Other tabs keep their relative order.",
+  "permissions": ["tabs", "scripting"],
+  "host_permissions": ["*://*.youtube.com/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_title": "Sort YouTube tabs by duration" }
+}
